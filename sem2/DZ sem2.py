@@ -1,14 +1,14 @@
 # 1 - Напишите программу, которая принимает на вход вещественное число 
 # и показывает сумму его цифр.
 
-# num = input('Введите число : ')
+num = input('Введите число : ')
 
-# result = 0
-# for i in range(len(num)):
-#     if not num[i].isdigit():
-#          continue
-#     result=(int(result)+int(num[i]))
-# print(f'сумма цифр в числе {num} = {result}')
+result = 0
+for i in range(len(num)):
+    if not num[i].isdigit():
+         continue
+    result=(int(result)+int(num[i]))
+print(f'сумма цифр в числе {num} = {result}')
 
 # *Пример:*
 
