@@ -143,34 +143,34 @@
 
 
  
-while (True):
-    try:
-        number=int(input('Введите десятичное число: '))
-        break
-    except ValueError:
-        print('Вы ввели не число')
-        continue
-'''
-Вводим число и проверяем его на то что это именно число.
-'''
-def dec_to_bin(number):
+# while (True):
+#     try:
+#         number=int(input('Введите десятичное число: '))
+#         break
+#     except ValueError:
+#         print('Вы ввели не число')
+#         continue
+# '''
+# Вводим число и проверяем его на то что это именно число.
+# '''
+# def dec_to_bin(number):
     
-    result= ""
-    while(True):
-        result= result+str(number%2)
-        number = number//2
-        if(number == 1 or number ==0):
-            result += str(number)
-            break
-    return result[::-1]
-    #print(f'{result}')    
-'''
-Формирует из десятичного числа -> двоичное
-'''
+#     result= ""
+#     while(True):
+#         result= result+str(number%2)
+#         number = number//2
+#         if(number == 1 or number ==0):
+#             result += str(number)
+#             break
+#     return result[::-1]
+#     #print(f'{result}')    
+# '''
+# Формирует из десятичного числа -> двоичное
+# '''
 
 
-dec_to_bin(number)
-print(f'Двоичное число из {number} = {dec_to_bin(number)}')   
+# dec_to_bin(number)
+# print(f'Двоичное число из {number} = {dec_to_bin(number)}')   
 
 
 
@@ -180,6 +180,16 @@ print(f'Двоичное число из {number} = {dec_to_bin(number)}')
 # *Пример:*
 
 # - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+e= -10
+def fib(n):
+    if n in [1, 2]:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+list = []
+for e in range(1, 10):
+    list.append(fib(e))
+print(list) # 1 1 2 3 5 8 13 21 34
 #  [Негафибоначчи](https://clck.ru/sH87m)
 
 
